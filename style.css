@@ -1,0 +1,105 @@
+/* Font used trough the project */
+@font-face {
+  font-family: HankenGrotesk-Medium;
+  src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+@font-face {
+  font-family: HankenGrotesk-Bold;
+  src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: HankenGrotesk-ExtraBold;
+  src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  font-family: HankenGrotesk-Medium, Arial, sans-serif;
+}
+.card_top {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0px 0px 50px 50px;
+  text-align: center;
+  margin: auto;
+  color: hsl(241, 100%, 89%);
+  padding: 20px;
+}
+.card_title {
+  margin-bottom: 20px;
+}
+.card_score {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  padding-top: 20px;
+}
+.card_score_number {
+  display: block;
+  font-size: 70px;
+  color: hsl(0, 0%, 100%);
+  font-family: HankenGrotesk-ExtraBold;
+}
+.card_score_label {
+  color: hsl(0, 0%, 100%);
+  font-family: HankenGrotesk-Bold;
+  margin: 20px;
+}
+.card_bottom {
+  background: hsl(0, 0%, 100%);
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+ul li {
+  list-style-type: none;
+}
+.card_score_summary {
+  color: hsl(224, 30%, 27%);
+  font-family: HankenGrotesk-ExtraBold, Arial, sans-serif;
+}
+.score_card {
+  height: 55px;
+  margin: 20px auto;
+  padding: 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_score_reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.card_score_memory {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.card_score_verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.card_score_visual {
+  background: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.point {
+  color: rgba(48, 59, 90, 0.3);
+}
+.azx {
+  color: hsl(0, 0%, 100%);
+  color: hsl(221, 100%, 96%);
+  color: hsl(241, 100%, 89%);
+  color: hsl(224, 30%, 27%);
+}
