@@ -23,15 +23,17 @@
   height: 100vh;
   font-family: HankenGrotesk-Medium, Arial, sans-serif;
 }
-.card_top {
+.card_big {
+  background: hsl(0, 0%, 100%);
   width: 100%;
-  height: 350px;
+}
+.card_score_section {
+  width: 100%;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px 30px 30px;
   text-align: center;
-  margin: auto;
   color: hsl(241, 100%, 89%);
-  padding: 20px;
+  padding: 40px;
 }
 .card_title {
   margin-bottom: 20px;
@@ -64,9 +66,7 @@
   font-size: 1.5em;
   margin: 20px;
 }
-.card_bottom {
-  background: hsl(0, 0%, 100%);
-  width: 100%;
+.card_summary_section {
   padding: 30px;
 }
 ul li {
@@ -76,6 +76,7 @@ ul li {
   color: hsl(224, 30%, 27%);
   font-family: HankenGrotesk-ExtraBold, Arial, sans-serif;
   font-size: 1.2em;
+  /* margin: 30px; */
 }
 .score_card {
   font-family: HankenGrotesk-Bold;
@@ -87,9 +88,11 @@ ul li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* margin: 30px; */
 }
 .card_img {
   margin: 9px;
+  padding: 30px;
 }
 .card_score_reaction {
   background: hsla(0, 100%, 67%, 0.1);
@@ -118,7 +121,7 @@ button {
   background: hsl(224, 30%, 27%);
   width: 100%;
   height: 55px;
-  margin: 20px auto;
+  /* margin: auto; */
   padding: 0px 10px;
   border-radius: 40px;
   border: 0;
@@ -130,6 +133,18 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@media screen and (min-width: 900px) {
+  .card {
+    background-color: hsl(221, 100%, 96%);
+    padding: 90px;
+    width: 100%;
+    height: 100%;
+  }
+  .card_top {
+    border-radius: 30px;
+  }
+}
+
 .azx {
   color: hsl(0, 0%, 100%);
   color: hsl(221, 100%, 96%);
