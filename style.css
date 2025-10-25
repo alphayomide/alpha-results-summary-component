@@ -19,8 +19,8 @@
 }
 
 .card {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   font-family: HankenGrotesk-Medium, Arial, sans-serif;
 }
 .card_big {
@@ -91,8 +91,7 @@ ul li {
   /* margin: 30px; */
 }
 .card_img {
-  margin: 9px;
-  padding: 30px;
+  margin: 3px;
 }
 .card_score_reaction {
   background: hsla(0, 100%, 67%, 0.1);
@@ -121,13 +120,12 @@ button {
   background: hsl(224, 30%, 27%);
   width: 100%;
   height: 55px;
-  /* margin: auto; */
   padding: 0px 10px;
   border-radius: 40px;
   border: 0;
 }
 .attribution {
-  /* font-size: 11px; */
+  font-size: 0.8em;
   text-align: center;
 }
 .attribution a {
@@ -137,10 +135,16 @@ button {
   .card {
     background-color: hsl(221, 100%, 96%);
     padding: 90px;
-    width: 100%;
-    height: 100%;
   }
-  .card_top {
+  .card_big {
+    margin: auto;
+    width: 700px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+  }
+  .card_score_section {
     border-radius: 30px;
   }
 }
