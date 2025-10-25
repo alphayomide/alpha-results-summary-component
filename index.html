@@ -14,25 +14,14 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="card">
       <section class="card_top">
         <p class="card_title">Your Result</p>
         <div class="card_score">
-          <span class="card_score_number">76</span>
-          <span class="card_score_total">of 100</span>
+          <p class="card_score_number">76</p>
+          <p class="card_score_total">of 100</p>
         </div>
         <p class="card_score_label">Great</p>
         <p class="card_score_discription">
@@ -43,30 +32,48 @@
         <p class="card_score_summary">Summary</p>
         <ul>
           <li class="card_score_reaction score_card">
-            <span
-              ><img src="./assets/images/icon-reaction.svg" alt="reaction" />
+            <span>
+              <span class="card_img">
+                <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+              </span>
               Reaction</span
             >
-            <span class="point"> <strong>80</strong> / 100</span>
+            <span class="point"
+              ><span class="m_point"><strong>80</strong></span> / 100</span
+            >
           </li>
           <li class="card_score_memory score_card">
-            <span
-              ><img src="./assets/images/icon-memory.svg" alt="memory" />
+            <span>
+              <span class="card_img">
+                <img src="./assets/images/icon-memory.svg" alt="memory" />
+              </span>
               Memory</span
             >
-            <span class="point"> <strong>92</strong> / 100</span>
+            <span class="point">
+              <span class="m_point"><strong>92</strong></span> / 100</span
+            >
           </li>
           <li class="card_score_verbal score_card">
-            <span
-              ><img src="./assets/images/icon-verbal.svg" alt="verbal" /> Verbal
+            <span>
+              <span class="card_img"
+                ><img src="./assets/images/icon-verbal.svg" alt="verbal"
+              /></span>
+              Verbal
             </span>
-            <span class="point"> <strong>61</strong> / 100</span>
+            <span class="point">
+              <span class="m_point"><strong>61</strong></span> / 100</span
+            >
           </li>
           <li class="card_score_visual score_card">
-            <span
-              ><img src="./assets/images/icon-visual.svg" alt="visual" /> Visual
+            <span>
+              <span class="card_img">
+                <img src="./assets/images/icon-visual.svg" alt="visual" />
+              </span>
+              Visual
             </span>
-            <span class="point"> <strong>72</strong> / 100</span>
+            <span class="point">
+              <span class="m_point"><strong>72</strong></span> / 100</span
+            >
           </li>
         </ul>
         <button>Continue</button>
