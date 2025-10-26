@@ -16,11 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1.02em;
-}
-
-.card {
-  /* width: 100%;
-  height: 100vh; */
   font-family: HankenGrotesk-Medium, Arial, sans-serif;
 }
 .card_big {
@@ -76,7 +71,6 @@ ul li {
   color: hsl(224, 30%, 27%);
   font-family: HankenGrotesk-ExtraBold, Arial, sans-serif;
   font-size: 1.2em;
-  /* margin: 30px; */
 }
 .score_card {
   font-family: HankenGrotesk-Bold;
@@ -88,7 +82,6 @@ ul li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* margin: 30px; */
 }
 .card_img {
   margin: 3px;
@@ -124,6 +117,13 @@ button {
   border-radius: 40px;
   border: 0;
 }
+button:hover {
+  filter: brightness(120%);
+}
+button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  filter: brightness(100%);
+}
 .attribution {
   font-size: 0.8em;
   text-align: center;
@@ -134,15 +134,17 @@ button {
 @media screen and (min-width: 900px) {
   .card {
     background-color: hsl(221, 100%, 96%);
-    padding: 90px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .card_big {
-    margin: auto;
     width: 700px;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px;
   }
   .card_score_section {
     border-radius: 30px;
